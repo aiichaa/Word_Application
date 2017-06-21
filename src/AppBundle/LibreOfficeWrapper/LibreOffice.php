@@ -49,13 +49,14 @@ class LibreOffice
      * @param string $filename
      *
      */
-    public function convert_docx_to_pdf($filename)
+    public function convert_docx_to_pdf($filename,$outdir)
     {
 
         $this->execute(
             sprintf(
-                ' -headless -convert-to pdf %s ',
-                \escapeshellarg($filename)
+                ' --headless -convert-to pdf %s -outdir %s',
+                \escapeshellarg($filename),
+                $outdir
             )
         );
 

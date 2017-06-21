@@ -66,7 +66,7 @@ class DefaultController extends Controller
 
         //use libre office to convert docx to pdf
         $libreOffice = new LibreOffice();
-        $libreOffice->convert_docx_to_pdf($this->getParameter('template_word').'/result.docx');
+        $libreOffice->convert_docx_to_pdf($this->getParameter('template_word').'/result.docx',$this->getParameter('template_word'));
 
         /************convert to pdf*************/
         //Load temp file
