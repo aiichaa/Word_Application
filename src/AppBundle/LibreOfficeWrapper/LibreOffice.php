@@ -26,7 +26,8 @@ class LibreOffice
      *
      * @param string $path Path to Imagick binary (optional)
      */
-    public function __construct($path = 'C:\"Program Files\LibreOffice 5"\program\soffice.exe')
+    //public function __construct($path = 'C:\"Program Files\LibreOffice 5"\program\soffice.exe')
+    public function __construct($path = 'libreoffice')
     {
         $this->path = $path;
     }
